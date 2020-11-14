@@ -1,0 +1,289 @@
+.goods-cont{
+	width: 1200px;
+	height: 690px;
+	margin: 0px auto;
+}
+.goods-cont p{
+	height: 54px;
+	line-height: 54px;
+	font-size: 16px;
+}
+.goods-cont p a:hover{
+	color: #f00;
+}
+/*----------------------tap图片部分开始------------------------------*/
+.goods-cont .goods-cont-left .img-box{
+	width: 468px;
+	height: 468px;
+	border: 1px solid #DCDCDC;
+}
+.goods-cont .goods-cont-left .img-box img{
+	width: 100%;
+}
+.goods-cont .goods-cont-left ul{
+	
+}
+.goods-cont .goods-cont-left ul li{
+	width: 100px;
+	height: 100px;
+	margin-top: 20px;
+	float: left;
+	margin-right: 23px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.goods-cont .goods-cont-left ul li.current{
+	border: 2px solid #434343;
+}
+.goods-cont .goods-cont-left ul li img{
+	width: 100%;
+}*
+
+/*----------------------tap图片部分结束------------------------------*/
+
+/*----------------------右边购买部分开始------------------------------*/
+.goods-cont .goods-cont-right{
+	width: 670px;
+	height: 584px;
+	/*background-color: yellow;*/
+}
+.goods-cont .goods-cont-right h3{
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+	font-size: 24px;
+	overflow: hidden;
+}
+.goods-cont .goods-cont-right p:first-of-type{
+	height: 80px;
+	line-height: 80px;
+	overflow: hidden;
+	border-bottom: 1px solid #DCDCDC;
+}
+.goods-cont .goods-cont-right p:first-of-type span{
+	float: left;
+}
+.goods-cont .goods-cont-right p:first-of-type span:nth-of-type(1){
+	font-size: 30px;
+	font-weight: 700;
+	color: #b84339;
+	margin-right: 30px;
+}
+.goods-cont .goods-cont-right p:first-of-type span:nth-of-type(2){
+	margin-right: 5px;
+}
+.goods-cont .goods-cont-right p:first-of-type span:nth-of-type(2),
+.goods-cont .goods-cont-right p:first-of-type span:nth-of-type(3){
+	font-size: 14px;
+	text-decoration: line-through;
+}
+.goods-cont .goods-cont-right p:first-of-type span:nth-of-type(4){
+	width: 39px;
+	height: 18px;
+	text-align: center;
+	line-height: 18px;
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	background-color:#cd823f ;
+	border-radius: 3px;
+	margin-top: 32px;
+	margin-left: 10px;
+}
+.goods-cont .goods-cont-right p:first-of-type span:nth-of-type(n+4){
+	font-size: 14px;
+	margin-left: 30px;
+}
+.goods-cont .goods-cont-right div.hua{
+	height: 80px;
+	border-bottom: 1px solid #DCDCDC;
+	overflow: hidden;
+}
+.goods-cont .goods-cont-right div.hua ul{
+	height: 80px;
+	margin-top: 10px;
+}
+.goods-cont .goods-cont-right div.hua ul li{
+	height: 30px;
+	line-height: 30px;
+}
+.goods-cont .goods-cont-right div.hua ul li span,
+.goods-cont .goods-cont-right div.hua ul li a{
+	font-size: 14px;
+}
+.goods-cont .goods-cont-right div.hua ul li:nth-of-type(1) a{
+	margin-left: 35px;
+}
+.goods-cont .goods-cont-right div.hua ul li:nth-of-type(2) a{
+	margin-left: 20px;
+}
+.goods-cont .goods-cont-right div.hua ul li:nth-of-type(1) span:nth-of-type(2){
+	margin-left: 135px;
+}
+.goods-cont .goods-cont-right div.hua ul li:nth-of-type(2) span:nth-of-type(2){
+	margin-left: 135px;
+}
+
+.goods-cont .goods-cont-right p.biaoqian{
+	height: 65px;
+	border-bottom: 1px solid #DCDCDC;
+}
+.goods-cont .goods-cont-right p.biaoqian span{
+	font-size:16px;
+	font-weight: 700;
+	float: left;
+}
+.goods-cont .goods-cont-right p.biaoqian a{
+	height: 24px;
+	line-height: 24px;
+	padding: 0px 8px;
+	text-align: center;
+	display: block;
+	float: left;
+	border-radius: 3px;
+	margin-left: 10px;
+	margin-top: 16px;
+	color: #999;
+	border: 1px solid #DCDCDC;
+	font-size: 14px;
+}
+.goods-cont .goods-cont-right p.biaoqian a:first-of-type{
+	margin-left: 20px;
+}
+.goods-cont .goods-cont-right p.biaoqian a:last-of-type{
+	color: #0736e3;
+	border: none;
+}
+.goods-cont .goods-cont-right p.gml{
+	height: 35px;
+	line-height: 35px;
+	margin: 20px 0px;
+}
+.goods-cont .goods-cont-right p.gml>span{
+	font-size:16px;
+	font-weight: 700;
+	float: left;
+}
+.goods-cont .goods-cont-right p.gml>a{
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	display: inline-block;
+	background-color:#e1e1e1 ;
+	font-size: 16px;
+	cursor: pointer;
+	float: left;
+}
+.goods-cont .goods-cont-right p.gml>a:first-of-type{
+	margin-left: 20px;
+}
+.goods-cont .goods-cont-right p.gml>input{
+	width: 47px;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid #e1e1e1;
+	float: left;
+}
+.goods-cont .goods-cont-right p.but3{
+	height: 45px;
+	margin: 30px 0px;
+	margin-top: 50px;
+}
+.goods-cont .goods-cont-right p.but3>a{
+	width: 195px;
+	height: 43px;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 43px;
+	font-size: 18px;
+	border: 1px solid #666;
+	margin-right: 20px;
+	
+}
+.goods-cont .goods-cont-right p.but3 a:first-of-type{
+	background-color: #f00;
+	border: none;
+	color: #fff;
+	border: 1px solid #ff2f2f;
+}
+
+.goods-cont .goods-cont-right p.but3 a:nth-of-type(n+2):hover{
+	background-color: #dcdcdc;
+	border: 1px solid #333;
+	color: #000;
+}
+.goods-cont .goods-cont-right p.but3 a:first-of-type:hover{
+	background-color:#ff7575 ;
+}
+.goods-cont .goods-cont-right p.but3 a:last-of-type span:first-of-type{
+	float: left;
+	margin-left: 40px;
+	font-size: 25px;
+}
+.goods-cont .goods-cont-right p.but3 a:last-of-type span:last-of-type{
+	font-size: 18px;
+	float: left;
+	margin-left: 10px;
+}
+.goods-cont .goods-cont-right div.baoxian{
+	width: 670px;
+	height: 110px;
+	border: 1px solid #dcdcdc;
+	float: left;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.goods-cont .goods-cont-right div.baoxian .box-one{
+	width: 460px;
+	height: 50px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.goods-cont .goods-cont-right div.baoxian .box-one p,
+.goods-cont .goods-cont-right div.baoxian .box-one div{
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #666;
+	border-bottom: none;
+}
+.goods-cont .goods-cont-right div.baoxian .box-one div{
+	border-bottom: none;
+}
+.goods-cont .goods-cont-right div.baoxian .box-one div b{
+	margin-left: 10px;
+}
+.goods-cont .goods-cont-right div.baoxian .box-two{
+	width: 120px;
+	height: 51px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+.goods-cont .goods-cont-right div.baoxian .box-two span:first-of-type{
+	font-size: 18px;
+	color: #666;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.goods-cont .goods-cont-right div.baoxian .box-two span:last-of-type{
+	width: 24px;
+	height: 24px;
+	display: block;
+	float: left;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 24px;
+	border-radius: 50%;
+	background-color: #0DB033;
+	margin-top: 10px;
+}
+/*----------------------右边购买部分结束------------------------------*/

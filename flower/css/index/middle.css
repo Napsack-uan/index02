@@ -1,0 +1,515 @@
+/*-----------------------------------秒杀区---------------------------*/
+
+#wrap {
+	width: 1200px;
+	height: 495px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+
+/*头部*/
+
+#wrap .wrap_top div {
+	width: 1200px;
+	height: 50px;
+	margin-top: 60px;
+	margin-bottom: 22px;
+	position: relative;
+}
+
+#wrap .wrap_top div h1 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+#wrap .wrap_top span {
+	font-size: 16px;
+	color: #6e6e6e;
+	position: absolute;
+	top: 20px;
+	left: 110px;
+}
+
+
+/*底部*/
+
+#wrap .wrap_bottom div.wrap_box {
+	width: 280px;
+	height: 380px;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+}
+
+#wrap .wrap_bottom div.wrap_box span.tejia {
+	border-top: 25px solid #C86357;
+	border-left: 20px solid #C86357;
+	border-bottom: 25px solid #fff;
+	border-right: 20px solid #C86357;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	z-index: 99;
+}
+
+#wrap .wrap_bottom div.wrap_box span.tejia_font {
+	width: 35px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	position: absolute;
+	top: -3px;
+	right: 22px;
+	z-index: 999;
+}
+
+#wrap .wrap_bottom div.wrap_box div img {
+	width: 279px;
+	height: 279px;
+	background-color: #f9f9f9;
+}
+
+#wrap .wrap_bottom div.wrap_box div:first-of-type img {
+	margin-left: 10px;
+}
+
+#wrap .wrap_bottom div.wrap_box div img:hover {
+	cursor: pointer;
+	transform: scale(1.025);
+	transition-duration: 0.5s;
+	box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+	/*考虑浏览器兼容性*/
+	-moz-box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+	-webkit-box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+}
+
+#wrap .wrap_bottom div.wrap_box p:nth-of-type(1) {
+	width: 280px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#wrap .wrap_bottom div.wrap_box p:nth-of-type(2) span:first-child {
+	color: #f00;
+	font-size: 18px;
+	margin-left: 63px;
+}
+
+#wrap .wrap_bottom div.wrap_box p:nth-of-type(2) span:last-child {
+	padding: 2px 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #c96556;
+}
+
+
+/*=================================秒杀区结束==============================*/
+
+
+/*=================================爱情鲜花开始==============================*/
+
+
+/*头部*/
+
+#love {
+	width: 1200px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+#love .love_top div {
+	width: 1200px;
+	height: 50px;
+	margin-top: 60px;
+	margin-bottom: 22px;
+	position: relative;
+	overflow: hidden;
+}
+
+#love .love_top div h1 {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+#love .love_top span {
+	font-size: 16px;
+	color: #6e6e6e;
+	position: absolute;
+	top: 20px;
+	left: 125px;
+}
+
+#love .love_top p {
+	margin-top: 20px;
+}
+
+#love .love_top p a {
+	color: #333;
+	font-size: 14px;
+	margin-left: 10px;
+	border-bottom: 2px solid #fff;
+}
+
+#love .love_top p a:hover {
+	color: #c86357;
+	display: inline-block;
+	border-bottom-color: #c86357;
+}
+
+
+/*中间图片*/
+
+#love .love_middle {
+	margin-bottom: 60px;
+}
+
+#love .love_m {
+	width: 586px;
+	height: 400px;
+	margin-bottom: 60px;
+	margin-right: 14px;
+}
+
+#love .love_m a img {
+	width: 586px;
+	height: 320px;
+}
+
+#love .love_m div {
+	width: 586px;
+	height: 122px;
+	background-color: #f7f7f7;
+	overflow: hidden;
+}
+
+#love .love_m div a {
+	width: 93px;
+	height: 83px;
+	margin-top: 13px;
+	float: left;
+	margin-left: 4px;
+}
+
+#love .love_m div a:hover {
+	animation: move 3s 0s infinite;
+	-webkit-animation: move 3s 0s infinite;
+	transform-origin: middle;
+	-webkit-transform-origin: middle;
+	display: block;
+	color: #f00;
+}
+
+@keyframes move {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	5% {
+		-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	10% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	15% {
+		-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	20% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	25% {
+		-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	30% {
+		-webkit-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	35% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	,
+	100%
+}
+
+@-webkit-keyframes move {
+	0%,
+	65% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	70% {
+		-webkit-transform: rotate(6deg);
+		transform: rotate(6deg);
+	}
+	75% {
+		-webkit-transform: rotate(-6deg);
+		transform: rotate(-6deg);
+	}
+	80% {
+		-webkit-transform: rotate(6deg);
+		transform: rotate(6deg);
+	}
+	85% {
+		-webkit-transform: rotate(-6deg);
+		transform: rotate(-6deg);
+	}
+	90% {
+		-webkit-transform: rotate(6deg);
+		transform: rotate(6deg);
+	}
+	95% {
+		-webkit-transform: rotate(-6deg);
+		transform: rotate(-6deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+#love .love_m div a img {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 10px auto;
+}
+
+#love .love_m div a span {
+	width: 93px;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+/*底部*/
+
+#love .love_bottom div.love_box {
+	width: 280px;
+	height: 420px;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+#love .love_bottom div.love_box span.tejia {
+	border-top: 25px solid #C86357;
+	border-left: 20px solid #C86357;
+	border-bottom: 25px solid #fff;
+	border-right: 20px solid #C86357;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	z-index: 99;
+}
+
+#love .love_bottom div.love_box span.tejia_font {
+	width: 35px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	position: absolute;
+	top: -3px;
+	right: 22px;
+	z-index: 999;
+}
+
+#love .love_bottom div.love_box div img {
+	width: 279px;
+	height: 279px;
+}
+
+#love .love_bottom div.love_box div:first-of-type img {
+	margin-left: 10px;
+}
+
+#love .love_bottom div.love_box div img:hover {
+	transform: scale(1.025);
+	transition-duration: 0.5s;
+	box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+	/*考虑浏览器兼容性*/
+	-moz-box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+	-webkit-box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+}
+
+#love .love_bottom div.love_box p:nth-of-type(1) {
+	width: 280px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#love .love_bottom div.love_box p:nth-of-type(2) {
+	width: 190px;
+	height: 40px;
+	border-bottom: 1px solid #eaeaea;
+	margin-left: 63px;
+	margin-bottom: 12px;
+}
+
+#love .love_bottom div.love_box p:nth-of-type(2) span:first-child {
+	color: #f00;
+	font-size: 18px;
+}
+
+#love .love_bottom div.love_box p:nth-of-type(2) span:last-child {
+	padding: 2px 10px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+#love .love_bottom div.love_box p:nth-of-type(3) {
+	width: 190px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 16px;
+	color: #a17536;
+}
+
+
+
+/*=================================爱情鲜花结束==============================*/
+
+
+/*=================================编辑开始==============================*/
+
+#edit .edit_left a img {
+	width: 376px;
+	height: 324px;
+	margin-right: 16px;
+}
+
+#edit .edit_left a:first-of-type img {
+	margin-left: 10px;
+}
+
+#edit .edit_left a img:hover {
+	transform: scale(1.025);
+	transition-duration: 0.5s;
+	box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+	/*考虑浏览器兼容性*/
+	-moz-box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+	-webkit-box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+}
+
+#edit .edit_right {
+	width: 395px;
+	height: 323px;
+}
+
+#edit .edit_right a img {
+	width: 395px;
+	height: 154px;
+	margin-bottom: 16px;
+	margin-right: 10px;
+}
+
+#edit .edit_right a img:hover {
+	transform: scale(1.025);
+	transition-duration: 0.5s;
+	box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+	/*考虑浏览器兼容性*/
+	-moz-box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+	-webkit-box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+}
+
+#edit .edit_bottom a img {
+	width: 270px;
+	height: 132px;
+	margin-right: 30px;
+	margin-top: 60px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#edit .edit_bottom a:first-of-type img {
+	margin-left: 10px;
+}
+
+#edit .edit_bottom a img:hover {
+	transform: scale(1.025);
+	transition-duration: 0.5s;
+	box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+	/*考虑浏览器兼容性*/
+	-moz-box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+	-webkit-box-shadow: 5px 5px 5px #F9F9F9, 5px -5px 5px #F9F9F9, -5px 5px 5px #F9F9F9, -5px -5px 5px #F9F9F9;
+}
+
+#edit .edit_bottom a:last-of-type img {
+	margin-right: 0px;
+}
+
+
+/*=================================编辑结束==============================*/
+
+
+/*=================================鲜家网友情链接开始==============================*/
+
+#inlink {
+	width: 1200px;
+	height: 87px;
+	margin: 0px auto;
+	background-color: #FBFBFB;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 1px solid #F5F5F5;
+}
+
+#inlink p {
+	font-size: 16px;
+	color: #333;
+}
+
+#inlink p:first-child {
+	padding-left: 30px;
+	margin-top: 15px;
+}
+
+#inlink p:last-of-type {
+	margin-top: 10px;
+}
+
+#inlink p:last-of-type a {
+	padding: 0px 30px;
+}
+
+#inlink p:last-of-type a:hover {
+	color: #ff0000;
+}
+
+#inlink p:last-of-type a:first-child {
+	padding-left: 35px;
+}
+
+
+/*=================================鲜家网友情链接结束==============================*/

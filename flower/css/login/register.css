@@ -1,0 +1,157 @@
+
+.login{
+	width: 100%;
+	height: 812px;
+	background: url(../../img/login/login_bg.png) no-repeat;
+	position: relative;
+	margin-bottom: 80px;
+}
+.login .login-box{
+	width: 544px;
+	height: 548px;
+	background-color: #fff;
+	position: absolute;
+	top: 185px;
+	right: 200px;
+	border-radius: 10px;
+}
+.login .login-box .msg-box{
+	width: 330px;
+	height: 500px;
+	margin: 20px auto;
+}
+
+.login .login-box .msg-box ul{
+	width: 300px;
+	height:55px ;
+	margin-top: 40px;
+	margin: 0px auto;
+	border-bottom: 1px solid #e2e2e2;	
+}
+.login .login-box .msg-box ul li{
+	width: 90px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	float: left;
+}
+.login .login-box .msg-box ul li:first-of-type{
+	margin-left: 70px;
+}
+.login .login-box .msg-box ul li a{
+	font-size: 13px;
+	padding: 20px 0px;
+	
+
+}
+.login .login-box .msg-box ul li a.active{
+	font-size: 24px;
+	color: #63c170;
+}
+
+.login .login-box .msg-box div{
+	width: 320px;
+	height: 30px;
+}
+.login .login-box .msg-box div a{
+	font-size: 16px;
+	color: #63c170;
+	float: right;
+	display: block;
+	padding-top: 5px;
+}
+.login .login-box .msg-box p:nth-of-type(1){
+	margin-top: 30px;
+	width: 326px;
+	height: 60px;
+}
+.login .login-box .msg-box p:nth-of-type(1) input{
+	width: 320px;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 30px;
+	font-size: 14px;
+	outline: none;
+}
+.login .login-box .msg-box p:nth-of-type(1) input:hover{
+	border-bottom: 1px solid #63c170;
+}
+.login .login-box .msg-box p:nth-of-type(2) input:hover{
+	border-bottom: 1px solid #63c170;
+}
+.login .login-box .msg-box p:nth-of-type(3) input:hover{
+	border-bottom: 1px solid #63c170;
+}
+.login .login-box .msg-box p:nth-of-type(2){
+	width: 326px;
+	height: 60px;
+}
+.login .login-box .msg-box p:nth-of-type(2) input{
+	width: 320px;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 30px;
+	font-size: 14px;
+	outline: none;
+}
+.login .login-box .msg-box p:nth-of-type(3){
+	width: 326px;
+	height: 60px;
+	position: relative;
+}
+.login .login-box .msg-box p:nth-of-type(3) input{
+	width: 320px;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 30px;
+	font-size: 14px;
+	outline: none;
+}
+.login .login-box .msg-box p:nth-of-type(3) span{
+	font-size: 18px;
+	display: block;
+	width: 70px;
+	height: 40px;
+	color: #4f43bf;
+	vertical-align: middle;
+	border: 1px solid;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 13px;
+	right: 60px;
+	letter-spacing: 1px;
+	text-decoration: line-through;
+}
+.login .login-box .msg-box p:nth-of-type(3) a{
+	font-size: 16px;
+	color: #4f43bf;
+	position: absolute;
+	top: 24px;
+	right: 0px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.login .login-box .msg-box p:nth-of-type(3) a:hover{
+	color: #f00;
+}
+.login .login-box .msg-box p:nth-of-type(4){
+	margin-top: 60px;
+}
+.login .login-box .msg-box p:nth-of-type(4) button{
+	width: 322px;
+	height: 50px;
+	font-size: 18px;
+	color: #fefefe;
+	text-align: center;
+	line-height: 50px;
+	background-color: #63c170;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+

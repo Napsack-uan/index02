@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>鲜家网 | 会员中心 &gt; 会员登录</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/login/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/index/bottom.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login/common.css"/>
+		<script type="text/javascript" src="js/vue.js">
+			
+		</script>
+	</head>
+
+	<body>
+		<div id="app">
+			
+		
+		<!--头部-->
+		<div class="header clearbox">
+			<div class="header-left fl">
+				<img src="img/login/logo.png" />
+			</div>
+			<div class="header-middle fl">
+				<a href="#">首页</a>
+				<a href="#">鲜花</a>
+				<a href="#">永生花</a>
+				<a href="#">礼品</a>
+				<a href="#">每周一花</a>
+				<a href="#">花语</a>
+				<a href="#">企业团购</a>
+			</div>
+			<div class="header-right fr">
+				<div class="search">
+					<span class="iconfont icon-sousuo"></span>
+					<input type="search" placeholder="请输入关键词搜索" />
+				</div>
+				<div class="fl">
+					<span class="iconfont icon-gouwuche"></span>
+					<span class="iconfont icon-tubiaozhizuomoban"></span>
+					<span>0</span>
+				</div>
+			</div>
+		</div>
+		<!--登录部分-->
+		<div class="login">
+			<div class="login-box">
+				<div class="msg-box">
+					<ul class="clearbox">
+						<li>
+							<a href="login.html" target="_blank">登录</a>
+						</li>
+						<li>
+							<a href="login.html" target="_blank">注册</a>
+						</li>
+					</ul>
+					<p>
+						<input type="text" placeholder="请输入11位手机号" v-model="formdata.tel"/>
+					</p>
+					<p>
+						<input type="password" placeholder="请设置登录密码"  v-model="formdata.pwd"/>
+					</p>
+					<p>
+						<input type="text" placeholder="请输入图片验证码"  v-model="formdata.code"/>
+						<span>2345</span>
+						<a>刷新</a>
+					</p>
+					<p>
+						<button @click="submits()">立即注册</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div id="foot" class="clearbox">
+			<div class="foot_left fl">
+				<p>
+					<a href="#">
+						<span class="iconfont icon-weixin"></span>
+					</a>
+					<a href="#">
+						<span class="iconfont icon-qq"></span>
+					</a>
+					<a href="#">
+						<span class="iconfont icon-weibo"></span>
+					</a>
+				</p>
+				<p>
+					<span>Copyright © 2018 鲜家 All rights reserved.</span>
+					<span>Powered by Bo Wen Technology Co., Ltd.</span>
+					<span>工信部备：辽ICP备18014953号-2</span>
+					<span>公安部备：21010202000602</span>
+				</p>
+
+			</div>
+			<div class="foot_middle fl">
+				<img src="img/index/foot/foot_er_wei_ma.png" />
+				<p>微信关注鲜家，立享优惠</p>
+			</div>
+			<div class="foot_right fr">
+				<div>
+					<ul>
+						<li>
+							<a href="#">售后服务</a>
+						</li>
+						<li>
+							<a href="#">同城鲜花</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+					</ul>
+				</div>
+				<p>全国订购热线: <b>400-888-1571</b></p>
+				<p>商务合作热线: <b>024-31128100</b></p>
+				<p>在线客服</p>
+			</div>
+		</div>
+		
+		<!--固定区-->
+		<div id="fixed">
+			<ul>
+				<li>
+					<a href="#"><span class="iconfont icon-gouwuche"></span><span>0</span></a>
+				</li>
+				<li>
+					<a href="#"><span class="iconfont icon-aixin"></a></li>
+				<li><a href="#"><span class="iconfont icon-shizhong1"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="iconfont icon-erweima"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="iconfont icon-arrow-top"></span></a>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:"#app",
+				data:{
+					formdata:{
+						tel:"",
+						pwd:"",
+						code:""
+					}
+					
+				},
+				methods:{
+					submits(){
+						let tel = this.formdata.tel;
+						let pwd = this.formdata.pwd;
+						let code = this.formdata.code;
+						alert(tel+pwd+code)
+						// 可以直接拿到表单所要提交的数据
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

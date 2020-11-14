@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*---------------------公共样式开始----------------------*/
+body, button, input, select, textarea{
+    font: 14px "Microsoft YaHei",Helvetica Neue,tahoma,Arial,Verdana,"Hiragino Sans GB","\5b8b\4f53";
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+body{
+	min-width: 1230px;
+	color: #3c3c3c;
+	font-size: 12px;
+}
+ul{
+	list-style: none;
+}
+a{
+	color: #3c3c3c;
+	text-decoration: none;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearbox::before{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+/*---------------------公共样式结束----------------------*/
+
+/*----------------------公共盒子部分开始--------------------*/
+div.love_box {
+	width: 280px;
+	height: 420px;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+div.love_box span.tejia {
+	width: 35px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #C86357;
+	font-size: 14px;
+	color: #fff;
+	z-index: 999;
+}
+
+div.love_box div img {
+	width: 279px;
+	height: 279px;
+}
+
+div.love_box div img:hover {
+	transform: scale(1.025);
+	transition-duration: 0.5s;
+	box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+	/*考虑浏览器兼容性*/
+	-moz-box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+	-webkit-box-shadow: 5px 5px 5px #CCCCCC, 5px -5px 5px #CCCCCC, -5px 5px 5px #CCCCCC, -5px -5px 5px #CCCCCC;
+}
+
+div.love_box p:nth-of-type(1) {
+	width: 280px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.love_box p:nth-of-type(2) {
+	width: 190px;
+	height: 40px;
+	border-bottom: 1px solid #eaeaea;
+	margin-left: 63px;
+	margin-bottom: 12px;
+}
+
+div.love_box p:nth-of-type(2) span:first-child {
+	color: #f00;
+	font-size: 18px;
+}
+
+div.love_box p:nth-of-type(2) span:last-child {
+	padding: 2px 10px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+div.love_box p:nth-of-type(3) {
+	width: 190px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 16px;
+	color: #a17536;
+}
+/*----------------------公共盒子部分结束--------------------*/

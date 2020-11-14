@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>鲜家网 | 会员中心 &gt; 会员登录</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/login/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/login/middle.css" />
+		<link rel="stylesheet" type="text/css" href="css/index/bottom.css" />
+		<link rel="stylesheet" type="text/css" href="css/login/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/login/register.css"/>
+		<script type="text/javascript" src="js/vue.js">
+			
+		</script>
+	</head>
+
+	<body>
+		<div id="root">
+		<!--头部-->
+		<div class="header clearbox" id="header">
+			<div class="header-left fl">
+				<img src="img/login/logo.png" />
+			</div>
+			<div class="header-middle fl">
+				<a href="index.html">首页</a>
+				<a href="javascript:;">鲜花</a>
+				<a href="javascript:;">永生花</a>
+				<a href="javascript:;">礼品</a>
+				<a href="javascript:;">每周一花</a>
+				<a href="javascript:;">花语</a>
+				<a href="javascript:;">企业团购</a>
+			</div>
+			<div class="header-right fr">
+				<div class="search">
+					<span class="iconfont icon-sousuo"></span>
+					<input type="search" placeholder="请输入关键词搜索" autofocus/>
+				</div>
+				<div class="fl">
+					<a href="shopCar.html"><span class="iconfont icon-gouwuche"></span><span>0</span></a>
+					<span class="iconfont icon-tubiaozhizuomoban"></span>
+				</div>
+			</div>
+		</div>
+		<!--登录部分-->
+		<div class="login">
+			<div class="login-box">
+				<div class="msg-box">
+					<ul class="clearbox">
+						<li>
+							<a href="#" :class="{'active':flag}" @click="handle">登录</a>
+						</li>
+						<li>
+							<a href="#" :class="{'active':!flag}" @click="handle" >注册</a>
+						</li>
+					</ul>
+					<!--login-->
+					<div class="box" style="display: none;" v-show="flag">
+						
+						<div class="phone">
+							<div>
+								<a href="javascript:;" id="phone-ma">使用手机验证码登录</a>
+							</div>
+							<p>
+								<input type="search" id="uname" placeholder="请使用用户名" />
+							</p>
+							<p>
+								<input type="search" id="upass" placeholder="请输入登录密码" />
+							</p>
+							<p>
+								<button id="loginBut">登录</button>
+								<a>忘记密码</a>
+							</p>
+							<p>
+								<span></span>
+								<span>第三方登录</span>
+								<span></span>
+							</p>
+							<p>
+								<span class="iconfont icon-weixin"></span>
+								<span class="iconfont icon-qq"></span>
+								<span class="iconfont icon-zhifubao"></span>
+							</p>
+						</div>
+						<div class="phone-msg">
+							<div>
+								<a href="javascript:;" id="phone-mi">使用账户密码登录</a>
+							</div>
+							<p>
+								<input type="search" id="uname" placeholder="请输入手机号" />
+							</p>
+							<p>
+								<input type="search" id="upass" placeholder="请输入短信验证码" />
+								<button id="loginBut">获取短信验证码</button>
+							</p>
+							<p>
+								<button id="loginBut">登录</button>
+							</p>
+						</div>
+					</div>
+					<!--regist-->
+					<div v-show="!flag">
+						<p>
+							<input type="search" placeholder="请输入用户名" id="uname" />
+						</p>
+						<p>
+							<input type="search" placeholder="请设置密码" id="upass" />
+						</p>
+						<p>
+							<input type="search" placeholder="请输入图片验证码" id="erweima"/>
+							<span class="yanzheng-ma"></span>
+							<a class="refurbish">刷新</a>
+						</p>
+						<p>
+							<button id="registerBut">立即注册</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--底部-->
+		<div id="foot" class="clearbox">
+			<div class="foot_left fl">
+				<p>
+					<a href="javascript:;">
+						<span class="iconfont icon-weixin"></span>
+					</a>
+					<a href="javascript:;">
+						<span class="iconfont icon-qq"></span>
+					</a>
+					<a href="javascript:;">
+						<span class="iconfont icon-weibo"></span>
+					</a>
+				</p>
+				<p>
+					<span>Copyright © 2018 鲜家 All rights reserved.</span>
+					<span>Powered by Bo Wen Technology Co., Ltd.</span>
+					<span>工信部备：辽ICP备18014953号-2</span>
+					<span>公安部备：21010202000602</span>
+				</p>
+
+			</div>
+			<div class="foot_middle fl">
+				<img src="img/index/foot/foot_er_wei_ma.png" />
+				<p>微信关注鲜家，立享优惠</p>
+			</div>
+			<div class="foot_right fr">
+				<div>
+					<ul>
+						<li>
+							<a href="javascript:;">售后服务</a>
+						</li>
+						<li>
+							<a href="javascript:;">同城鲜花</a>
+						</li>
+						<li>
+							<a href="javascript:;">关于我们</a>
+						</li>
+					</ul>
+				</div>
+				<p>全国订购热线: <b>400-888-1571</b></p>
+				<p>商务合作热线: <b>024-31128100</b></p>
+				<p>在线客服</p>
+			</div>
+		</div>
+
+		<!--固定区-->
+		<div id="fixed">
+			<ul>
+				<li>
+					<a href="shopcar.html">
+						<span class="iconfont icon-gouwuche"></span>
+						<span>0</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;"><span class="iconfont icon-aixin"></span></a>
+					<p>收藏鲜花</p>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="iconfont icon-shizhong1"></span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="iconfont icon-erweima"></span>
+						<img src="img/index/foot/foot_er_wei_ma.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="#header">
+						<span class="iconfont icon-arrow-top"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:"#root",
+				data:{
+					flag:"true"
+				},
+				methods:{
+					handle(){
+						this.flag = !this.flag
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>
+
+</script>

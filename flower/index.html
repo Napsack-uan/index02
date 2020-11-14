@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="鲜花,鲜花网,鲜花速递,鲜花预定,附近鲜花,鲜家网">
+		<meta name="description" content="鲜家网，这里你能接触到精致生活资讯，
+			品位艺术先人一步，收获新鲜幸福。鲜家网（xian.com）专注鲜花速递服务，
+			引领花艺潮流，支持24小时网上定花送花，快至1小时免费送花上门，
+			个性鲜花礼品定制，传递爱与温情！">
+		<title>鲜花网店_鲜花速递网_网上异地送花_鲜家网!</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/index/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/index/banner.css" />
+		<link rel="stylesheet" type="text/css" href="css/index/middle.css" />
+		<link rel="stylesheet" type="text/css" href="css/index/bottom.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		
+		<style type="text/css">
+			.swipaere{
+				width: 100%;
+				height: 470px;
+				overflow: hidden;
+				position: relative;
+			}
+			.swipaere .nav{
+				width: 260px;
+				height: 470px;
+				background-color: #fff;
+				position: absolute;
+				top: 0px;
+				left: 193px;
+				z-index: 99;
+			}
+			.swipaere .nav div{
+				width: 210px;
+				height: 100px;
+				margin: 0px auto;
+				border-bottom: 1px solid #F0EEEE;
+				overflow: hidden;
+			}
+			.swipaere .nav div h3{
+				margin-top: 10px;
+				margin-bottom: 6px;
+			}
+			.swipaere .nav div:nth-of-type(1) p,
+			.swipaere .nav div:nth-of-type(2) p,
+			.swipaere .nav div:nth-of-type(3) p,{
+				width: 211px;
+				height: 50px;
+				overflow: hidden;
+			}
+			.swipaere .nav div:nth-of-type(4) p{
+				width: 211px;
+				height: 70px;
+				margin-right: 8px;
+				overflow: hidden;
+			}
+			.swipaere .nav div:nth-of-type(1) p a,
+			.swipaere .nav div:nth-of-type(2) p a,
+			.swipaere .nav div:nth-of-type(3) p a{
+				display: inline-block;
+				margin: 0 19px 9px 0 ;
+				font-size: 12px;
+				color: #555;
+			}
+			.swipaere .nav div:nth-of-type(4) p a{
+				display: inline-block;
+				margin-right: 8px;
+				font-size: 12px;
+				color: #555;
+			}
+			.swipaere .nav div p a:hover{
+				color: #dd977c;
+			}
+		</style>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/menuListData.js"></script>
+		<script type="text/javascript" src="js/mainData.js"></script>
+		<script type="text/javascript" src="js/index-topheader.js"></script>
+		<script type="text/javascript" src="js/index-topsearch.js"></script>
+		<script type="text/javascript" src="js/index-navheader.js"></script>
+		<script type="text/javascript" src="js/swpheader.js"></script>
+		<script type="text/javascript" src="js/indexkill.js"></script>
+		<script type="text/javascript" src="js/mainitem.js"></script>
+	</head>
+
+	<body>
+		<div id="app" >		
+		<!--头部-->
+		<div id="header">
+			<top-header></top-header>
+			<!--搜索-->
+			<top-search></top-search>
+			<!--导航-->
+			<nav-header></nav-header>
+		</div>
+		<!--轮播区-->
+		<swp-header :leftdata="leftData"></swp-header>
+		<!--秒杀区-->
+		<index-kill></index-kill>
+		<div id="love">
+
+			<!--爱情鲜花-->
+			<main-item :title="item.title" :stitle="item.stitle" 
+				:maindata="mainData[index]" 
+				v-for="item,index in mainData"></main-item>
+			<!--爱情鲜花结束-->
+
+			
+			<!--礼品-->
+			<div class="love_top">
+				<div>
+					<h1>礼品</h1>
+					<span> 给她·美好的礼物</span>
+					<p class="fr">
+						<a href="#">120元以下</a>
+						<a href="#">120-180元</a>
+						<a href="#">180-300元</a>
+						<a href="#">300-500元</a>
+						<a href="#">500元以上</a>
+						<a href="#">查看更多></a>
+					</p>
+				</div>
+			</div>
+			<div class="love_m fl">
+				<a href="#">
+					<img src="img/index/love/l1.png" />
+				</a>
+				<div>
+					<a href="#"><img src="img/index/love/l2.png" /><span>生日礼物</span></a>
+					<a href="#"><img src="img/index/love/l3.png" /><span>约会/求爱</span></a>
+					<a href="#"><img src="img/index/love/l4.png" /><span>结婚礼品</span></a>
+					<a href="#"><img src="img/index/love/l5.png" /><span>感谢/祝福</span></a>
+					<a href="#"><img src="img/index/love/l6.png" /><span>拜访/探望</span></a>
+					<a href="#"><img src="img/index/love/l7.png" /><span>纪念日礼物</span></a>
+				</div>
+
+			</div>
+			<!--<div class="love_bottom clearbox fl">-->
+			<div class="love_box fl">
+				<div>
+					<img src="img/index/love/h1.png" />
+				</div>
+				<p>携手未来·11枝香槟玫瑰纯美花束</p>
+				<p>
+					<span>&yen;138.00</span>
+					<span>原价 &yen;328.00</span>
+				</p>
+				<p>已售 1707</p>
+			</div>
+			<div class="love_box fl">
+				<div>
+					<img src="img/index/love/h2.png" />
+
+				</div>
+
+				<p>把心交给我·19枝红玫瑰纯美花束</p>
+				<p>
+					<span>&yen;198.00</span>
+					<span>原价 &yen;438.00</span>
+				</p>
+				<p>已售 1202</p>
+			</div>
+			<div class="love_box fl">
+				<div>
+					<img src="img/index/love/h3.png" />
+
+				</div>
+
+				<p>撩动我的心·33枝粉玫瑰纯美花束</p>
+				<p>
+					<span>&yen;358.00</span>
+					<span>原价 &yen;518.00</span>
+				</p>
+				<p>已售 847</p>
+			</div>
+			<div class="love_box fl">
+				<div>
+					<img src="img/index/love/h4.png" />
+				</div>
+				<p>爱你久久·99枝红玫瑰纯美花束</p>
+				<p>
+					<span>&yen;558.00</span>
+					<span>原价 &yen;808.00</span>
+				</p>
+				<p>已售 1403</p>
+			</div>
+			<div class="love_box fl">
+				<div>
+					<img src="img/index/love/h5.png" />
+				</div>
+
+				<p>因你而幸福·9枝戴安娜粉玫瑰韩式花束</p>
+				<p>
+					<span>&yen;138.00</span>
+					<span>原价 &yen;288.00</span>
+				</p>
+				<p>已售 1122</p>
+			</div>
+			<div class="love_box fl">
+				<div>
+					<img src="img/index/love/h6.png" />
+				</div>
+
+				<p>为你倾心·11枝红玫瑰韩式花束</p>
+				<p>
+					<span>&yen;138.00</span>
+					<span>原价 &yen;308.00</span>
+				</p>
+				<p>已售 407</p>
+			</div>
+
+			<!--每周一花-->
+			<div class="love_top">
+				<div>
+					<h1>每周一花</h1>
+					<span>  悦人不如悦己</span>
+					<p class="fr">
+
+						<a href="#">查看更多></a>
+					</p>
+				</div>
+			</div>
+			<div class="love_middle">
+				<a href="#">
+					<img src="img/index/love/a7.png" />
+				</a>
+			</div>
+			<div class="love_bottom clearbox">
+				<div class="love_box">
+					<div>
+						<img src="img/index/love/i1.jpg" />
+					</div>
+					<p>携手未来·11枝香槟玫瑰纯美花束</p>
+					<p>
+						<span>&yen;138.00</span>
+						<span>原价 &yen;328.00</span>
+					</p>
+					<p>已售 1707</p>
+				</div>
+				<div class="love_box">
+					<div>
+						<img src="img/index/love/i2.jpg" />
+
+					</div>
+
+					<p>把心交给我·19枝红玫瑰纯美花束</p>
+					<p>
+						<span>&yen;198.00</span>
+						<span>原价 &yen;438.00</span>
+					</p>
+					<p>已售 1202</p>
+				</div>
+				<div class="love_box">
+					<div>
+						<img src="img/index/love/i3.jpg" />
+
+					</div>
+
+					<p>撩动我的心·33枝粉玫瑰纯美花束</p>
+					<p>
+						<span>&yen;358.00</span>
+						<span>原价 &yen;518.00</span>
+					</p>
+					<p>已售 847</p>
+				</div>
+				<div class="love_box">
+					<div>
+						<img src="img/index/love/i4.jpg" />
+					</div>
+					<p>爱你久久·99枝红玫瑰纯美花束</p>
+					<p>
+						<span>&yen;558.00</span>
+						<span>原价 &yen;808.00</span>
+					</p>
+					<p>已售 1403</p>
+				</div>
+			</div>
+
+			<!--编辑推荐-->
+			<div class="love_top">
+				<div>
+					<h1>编辑推荐</h1>
+					<span>   囊括美好的鲜花</span>
+					<p class="fr">
+						<a href="#">查看更多></a>
+					</p>
+				</div>
+			</div>
+			<div id="edit">
+				<div class="edit_left fl clearbox">
+					<a href="#" class="fl">
+						<img src="img/index/love/x1.png" />
+					</a>
+					<a href="#" class="fl">
+						<img src="img/index/love/x2.png" />
+					</a>
+				</div>
+				<div class="edit_right fr clearbox">
+					<a href="#" class="fr">
+						<img src="img/index/love/y1.png" />
+					</a>
+					<a href="#" class="fr">
+						<img src="img/index/love/y2.png" />
+					</a>
+				</div>
+				<div class="edit_bottom clearbox">
+					<a href="#"><img src="img/index/love/z1.png" /></a>
+					<a href="#"><img src="img/index/love/z2.png" /></a>
+					<a href="#"><img src="img/index/love/z3.png" /></a>
+					<a href="#"><img src="img/index/love/z4.png" /></a>
+				</div>
+			</div>
+
+		</div>
+
+		<!--鲜家网友情链接-->
+		<div id="inlink">
+			<p>鲜家网友情链接</p>
+			<p>
+				<a href="">好花网</a>
+				<a href="">日本雅虎</a>
+				<a href="">星座网</a>
+				<a href="">男装搭配</a>
+				<a href="">相亲</a>
+				<a href="">全民女性网</a>
+				<a href="">b2b电子商务平台</a>
+			</p>
+		</div>
+
+		<!--底部-->
+		<div id="foot" class="clearbox">
+			<div class="foot_left fl">
+				<p>
+					<a href="#">
+						<span class="iconfont icon-weixin"></span>
+					</a>
+					<a href="#">
+						<span class="iconfont icon-qq"></span>
+					</a>
+					<a href="#">
+						<span class="iconfont icon-weibo"></span>
+					</a>
+				</p>
+				<p>
+					<span>Copyright © 2018 鲜家 All rights reserved.</span>
+					<span>Powered by Bo Wen Technology Co., Ltd.</span>
+					<span>工信部备：辽ICP备18014953号-2</span>
+					<span>公安部备：21010202000602</span>
+				</p>
+
+			</div>
+			<div class="foot_middle fl">
+				<img src="img/index/foot/foot_er_wei_ma.png" />
+				<p>微信关注鲜家，立享优惠</p>
+			</div>
+			<div class="foot_right fr">
+				<div>
+					<ul>
+						<li>
+							<a href="#">售后服务</a>
+						</li>
+						<li>
+							<a href="#">同城鲜花</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+					</ul>
+				</div>
+				<p>全国订购热线: <b>400-888-1571</b></p>
+				<p>商务合作热线: <b>024-31128100</b></p>
+				<p>在线客服</p>
+			</div>
+		</div>
+
+		<!--固定区-->
+		<div id="fixed">
+			<ul>
+				<li>
+					<a href="#"><span class="iconfont icon-gouwuche"></span><span>0</span></a>
+				</li>
+				<li>
+					<a href="#"><span class="iconfont icon-aixin"></a></li>
+				<li><a href="#"><span class="iconfont icon-shizhong1"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="iconfont icon-erweima"></span></a>
+				</li>
+				<li>
+					<a href="#"><span class="iconfont icon-arrow-top"></span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/swiper.min.js">
+		
+	</script>
+	<script type="text/javascript">
+		var root = new Vue({
+			el:"#app",
+			data:{
+				navList:["首页","鲜花","永生花","礼品","每周一花","花语","企业团购"],
+				leftData,
+				mainData
+			}
+		})
+		var mySwiper = new Swiper ('#banner', {
+		    direction: "horizontal", // 垂直切换选项
+		    loop: true, // 循环模式选项
+			speed:800,
+		     autoplay : {
+		        delay:1800
+		      },
+		    // 如果需要分页器
+		    pagination: {
+		      el: '.swiper-pagination',
+		    },
+		    
+		    // 如果需要前进后退按钮
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+		    
+		    
+		  })        
+		
+	</script>
+	</body>
+
+</html>

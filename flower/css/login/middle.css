@@ -1,0 +1,293 @@
+/*-----------------------------------login部分开始---------------------------*/
+
+.login {
+	width: 100%;
+	height: 812px;
+	background: url(../../img/login/login_bg.png) no-repeat;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.login .login-box {
+	width: 544px;
+	height: 548px;
+	background-color: #fff;
+	position: absolute;
+	top: 185px;
+	right: 200px;
+	border-radius: 10px;
+}
+
+.login .login-box .msg-box {
+	width: 330px;
+	height: 500px;
+	margin: 20px auto;
+}
+
+.login .login-box .msg-box ul {
+	width: 300px;
+	height: 55px;
+	margin-top: 40px;
+	margin: 0px auto;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.login .login-box .msg-box ul li {
+	width: 90px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	float: left;
+}
+
+.login .login-box .msg-box ul li:first-of-type {
+	margin-left: 70px;
+/*	border-bottom: 3px solid #63c170;*/
+}
+
+.login .login-box .msg-box ul li:first-of-type a {
+	font-size: 16px;
+	padding: 20px 0px;
+	
+}
+
+.login .login-box .msg-box ul li:nth-of-type(2) a {
+	font-size: 16px;
+}
+
+.login .login-box .msg-box .phone {
+	display: block;
+}
+
+.login .login-box .msg-box .phone div {
+	width: 320px;
+	height: 30px;
+}
+
+.login .login-box .msg-box .phone div a {
+	font-size: 16px;
+	color: #63c170;
+	float: right;
+	display: block;
+	padding-top: 5px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(1) {
+	width: 326px;
+	height: 60px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(1) input {
+	width: 320px;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 30px;
+	font-size: 14px;
+	outline: none;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(1) input:hover {
+	border-bottom: 1px solid #63c170;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(2) input:hover {
+	border-bottom: 1px solid #63c170;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(2) {
+	width: 326px;
+	height: 60px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(2) input {
+	width: 320px;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 30px;
+	font-size: 14px;
+	outline: none;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(3) {
+	margin-top: 60px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(3) button {
+	width: 322px;
+	height: 50px;
+	font-size: 18px;
+	color: #fefefe;
+	text-align: center;
+	line-height: 50px;
+	background-color: #63c170;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(3) a {
+	color: #999;
+	font-size: 16px;
+	display: block;
+	padding-top: 10px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(3) a:hover {
+	color: #f00;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(4) {
+	width: 320px;
+	height: 30px;
+	margin-top: 40px;
+	position: relative;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(4) span:nth-of-type(1),
+.login .login-box .msg-box .phone p:nth-of-type(4) span:nth-of-type(3) {
+	width: 110px;
+	height: 2px;
+	background-color: #e5e5e5;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(4) span:nth-of-type(1) {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(4) span:nth-of-type(3) {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(4) span:nth-of-type(2) {
+	font-size: 16px;
+	color: #999;
+	position: absolute;
+	top: -10px;
+	right: 119px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(5) {
+	width: 200px;
+	height: 40px;
+	margin: 0px auto;
+	text-align: center;
+	line-height: 40px;
+}
+
+.login .login-box .msg-box .phone p:nth-of-type(5) span {
+	font-size: 30px;
+	margin: 0px 10px;
+	color: #999;
+}
+
+
+/*手机短信验证*/
+
+.login .login-box .msg-box .phone-msg {
+	display: none;
+	overflow: hidden;
+}
+
+.login .login-box .msg-box .phone-msg div a {
+	font-size: 16px;
+	color: #63c170;
+	float: right;
+	display: block;
+	padding-top: 5px;
+	padding-right: 20px;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(1) {
+	width: 326px;
+	height: 60px;
+	margin-top: 60px;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(1) input {
+	width: 320px;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 30px;
+	font-size: 14px;
+	outline: none;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(1) input:hover {
+	border-bottom: 1px solid #63c170;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(2) input:hover {
+	border-bottom: 1px solid #63c170;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(2) {
+	width: 326px;
+	height: 60px;
+	position: relative;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(2) input {
+	width: 320px;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 30px;
+	font-size: 14px;
+	outline: none;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(2) button {
+	padding: 5px 15px;
+	font-size: 14px;
+	color: #fefefe;
+	text-align: center;
+	background-color: #63c170;
+	border: 1px solid #63c170;
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+	vertical-align: middle;
+	position: absolute;
+	top: 16px;
+	right: 10px;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(3) {
+	margin-top: 60px;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(3) button {
+	width: 322px;
+	height: 50px;
+	font-size: 18px;
+	color: #fefefe;
+	text-align: center;
+	line-height: 50px;
+	background-color: #63c170;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(3) a {
+	color: #999;
+	font-size: 16px;
+	display: block;
+	padding-top: 10px;
+}
+
+.login .login-box .msg-box .phone-msg p:nth-of-type(3) a:hover {
+	color: #f00;
+}
+
+
+/*-----------------------------------login部分结束---------------------------*/
